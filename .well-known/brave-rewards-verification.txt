@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: fleek.co
+Token: 2ff7c45ded57c9059018049b4f17f5bdc7945e003f84621f701a218c2b82e4da
