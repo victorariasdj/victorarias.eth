@@ -168,17 +168,22 @@ footer {
     width: 100%;
 }
 
+footer p {
+    margin: 0px;
+    margin-top: 8px;
+}
+
 .redes-sociales {
-    margin: 10px 0;
+    margin: 8px 0px 0px 0px;
 }
 
 .redes-sociales a {
-    margin: 0 10px;
+    margin: 0 px;
 }
 
 .redes-sociales a img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     filter: invert(100%);
 }
 
@@ -189,45 +194,45 @@ p {
 #btn-donar {
     background-color: #fff;
     color: #000;
-    padding: 10px 20px;
+    padding: 2px 7px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .caja-items a, div a {
-    /* ... Tus estilos existentes ... */
-    background-color: #f0f0f0; /* Color de fondo */
-    box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #ffffff; /* Sombras */
-    transition: box-shadow 0.3s ease; /* Transición suave al pasar el mouse */
+    
+    background-color: #f0f0f0; 
+    box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #ffffff;
+    transition: box-shadow 0.3s ease;
 }
 
 .caja-items a:hover, div a:hover {
-    box-shadow: 4px 4px 8px #d9d9d9, -4px -4px 8px #ffffff; /* Sombras al pasar el mouse */
+    box-shadow: 4px 4px 8px #d9d9d9, -4px -4px 8px #ffffff;
 }
 
 .caja-mezcla-master section {
-    background-color: #f0f0f0; /* Color de fondo */
-    box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #ffffff; /* Sombras */
-    transition: box-shadow 0.3s ease; /* Transición suave al pasar el mouse */
+    background-color: #f0f0f0; 
+    box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #ffffff; 
+    transition: box-shadow 0.3s ease;
 }
 
 .caja-mezcla-master section {
-    box-shadow: 4px 4px 8px #d9d9d9, -4px -4px 8px #ffffff; /* Sombras al pasar el mouse */
+    box-shadow: 4px 4px 8px #d9d9d9, -4px -4px 8px #ffffff; 
 }
 
 /* Estilos de neomorfismo para iconos y botones */
 #btn-donar, img, .nav-links a {
-    background-color: #f0f0f0; /* Color de fondo */
-    box-shadow: 4px 4px 8px #d9d9d9, -4px -4px 8px #ffffff; /* Sombras */
-    transition: box-shadow 0.3s ease; /* Transición suave al pasar el mouse */
+    background-color: #f0f0f0;
+    box-shadow: 4px 4px 8px #d9d9d9, -4px -4px 8px #ffffff;
+    transition: box-shadow 0.3s ease;
 }
 
 #btn-donar:hover, img:hover, .nav-links a:hover {
-    box-shadow: 2px 2px 4px #d9d9d9, -2px -2px 4px #ffffff; /* Sombras al pasar el mouse */
+    box-shadow: 2px 2px 4px #d9d9d9, -2px -2px 4px #ffffff; 
 }
 
-/* Estilos responsivos */
+
 @media (max-width: 1260px) {
 
     main {
@@ -285,7 +290,7 @@ p {
     .redes-sociales {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     .redes-sociales a {
