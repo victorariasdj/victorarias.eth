@@ -116,7 +116,7 @@ section {
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 150px;
-    margin: 0 20px;
+    /* margin: 0 20px; */
 }
 
 .caja-items a {
@@ -124,7 +124,7 @@ section {
     flex: 1;
     justify-content: center;
     align-items: center;
-    max-width: 400px;
+    max-width: 200px;
     min-width: 200px;
     min-height: 64px;
     /* border: 1px solid #000; */
@@ -237,15 +237,136 @@ p {
 }
 
 /* Estilos de neomorfismo para iconos y botones */
-#btn-donar, img, .nav-links a {
+#btn-donar, img, .nav-links a, .cancion, .controls button, .controls form {
     background-color: #f0f0f0;
     box-shadow: 4px 4px 8px #d9d9d9, -4px -4px 8px #ffffff;
     transition: box-shadow 0.3s ease;
 }
 
-#btn-donar:hover, img:hover, .nav-links a:hover {
+#btn-donar:hover, img:hover, .nav-links a:hover, .controls button:hover, .controls form:hover {
     box-shadow: 2px 2px 4px #d9d9d9, -2px -2px 4px #ffffff; 
 }
+
+/* Estilos generales */
+.reproductor {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.listadoCanciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    min-width: 270px;
+    max-width: 580px;
+}
+
+.cancion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    align-items: center;
+}
+
+.cancion a {
+    max-width: 400px;
+}
+
+#botonPaypal {
+    max-width: 200px;
+}
+
+.caratula {
+    display: flex;
+    width: 100%;
+    /* justify-content: center; */
+    align-items: center;
+    flex: 0.5;
+    margin: 4px;
+}
+
+
+.texto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 4px;
+}
+
+.texto1{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+}
+
+.caratula img {
+    width: 120px;
+    height: 120px;
+    margin: 0 8px 0 4px;
+}
+
+.caratula1 img {
+    display: flex;
+    width: 270px;
+    height: 270px;
+    margin: 0 8px 0 8px;
+}
+
+.textandbuttons {
+    width: 100%;
+    /* flex: 2; */
+}
+
+/* Estilos del reproductor de audio */
+audio {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.btnCompra {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    padding: 3px;
+}
+
+#botoNFT {
+    max-width: 153px;
+    max-height: 50px;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+
+.btnCompra form input{
+    /* width: 100%; */
+    /* border: 1px solid black; */
+    border-radius: 5px;
+}
+
+.share-button a {
+    display: flex;
+    align-items: center;
+    /* padding: 10px 20px; */
+    background-color: #f0f0f0; /* Cambia el color según tu diseño */
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
 
 
 @media (max-width: 1260px) {
@@ -261,6 +382,7 @@ p {
         flex-direction: column;
         position: absolute;
         width: 100%;
+        z-index: 1;
         background-color: #000;
         top: 56px;
         left: 0;
@@ -290,7 +412,7 @@ p {
     }
 
     h2 {
-        font-size: 95%;
+        font-size: 100%;
     }
 
     section {
