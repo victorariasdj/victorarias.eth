@@ -338,8 +338,8 @@ audio {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    gap: 5px;
-    padding: 3px;
+    gap: 12px;
+    padding: 8px;
 }
 
 #botoNFT {
@@ -356,8 +356,14 @@ audio {
     border-radius: 5px;
 }
 
+.btnCompra a img {
+    height: 37px;
+    margin: 0 0 0 8px;
+}
+
 .share-button a {
     display: flex;
+    justify-content: space-around;
     align-items: center;
     /* padding: 10px 20px; */
     background-color: #f0f0f0; /* Cambia el color según tu diseño */
@@ -367,6 +373,21 @@ audio {
     font-weight: bold;
 }
 
+.share-button img {
+    height: 37px;
+}
+
+.nft {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 845px;
+    gap: 32px;
+}
+
+.nft div {
+    width: 100%;
+}
 
 
 @media (max-width: 1260px) {
