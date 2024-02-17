@@ -390,11 +390,6 @@ audio {
     width: 100%;
 }
 
-.beatport img {
-    min-width: 270px;
-    max-width: 580px;
-}
-
 
 @media (max-width: 1260px) {
 
