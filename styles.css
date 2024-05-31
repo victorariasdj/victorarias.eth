@@ -119,16 +119,33 @@ section {
     /* margin: 0 20px; */
 }
 
-.caja-items a {
+.caja-centro {
+    margin-top: 100px;
+}
+
+.caja-centro a {
     display: flex;
-    flex: 1;
+    /* flex: 1; */
     justify-content: center;
     align-items: center;
-    max-width: 200px;
-    min-width: 200px;
-    min-height: 64px;
+    /* max-width: 200px; */
+    min-width: 344px;
+    min-height: 48px;
     /* border: 1px solid #000; */
-    margin: auto ;
+    /* margin: auto ; */
+    color: #000;
+}
+
+.caja-items a {
+    display: flex;
+    /* flex: 1; */
+    justify-content: center;
+    align-items: center;
+    /* max-width: 200px; */
+    /* min-width: 344px; */
+    /* min-height: 48px; */
+    /* border: 1px solid #000; */
+    /* margin: auto ; */
     color: #000;
 }
 
@@ -261,7 +278,7 @@ p {
     flex-wrap: wrap;
     gap: 12px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     min-width: 270px;
     max-width: 580px;
 }
@@ -339,16 +356,18 @@ audio {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
     gap: 12px;
     padding: 8px;
 }
 
 #botoNFT {
-    max-width: 153px;
-    max-height: 50px;
+    max-width: 120px;
+    max-height: 48px;
     border-radius: 5px;
+    border: #000 solid 1px;
     font-weight: bold;
+    font-size: 12px;
     
 }
 
@@ -359,8 +378,8 @@ audio {
 }
 
 .btnCompra a img {
-    height: 37px;
-    margin: 0 0 0 8px;
+    height: 28px;
+    margin: 0 8px 0 0;
 }
 
 .share-button a {
