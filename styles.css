@@ -275,6 +275,7 @@ p {
 /* Estilos generales */
 .reproductor {
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     border: 1px solid #ddd;
@@ -284,6 +285,7 @@ p {
 .listadoCanciones {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     gap: 12px;
     align-items: center;
     justify-content: space-around;
@@ -310,6 +312,7 @@ p {
 
 .caratula {
     display: flex;
+    flex-direction: column;
     width: 100%;
     /* justify-content: center; */
     align-items: center;
@@ -337,15 +340,13 @@ p {
 }
 
 .caratula img {
-    width: 120px;
-    height: 120px;
+    height: 300px;
     margin: 0 8px 0 4px;
 }
 
 .caratula1 img {
     display: flex;
-    width: 270px;
-    height: 270px;
+    height: 300px;
     margin: 0 8px 0 8px;
 }
 
@@ -427,6 +428,7 @@ audio {
 
     main {
         margin-top: 70px;
+        margin-bottom: 100px;
     }
     
     .nav-links.active {
@@ -476,7 +478,7 @@ audio {
     }
 
     .caja-items a {
-        width: 90vw;
+        width: 100%;
         padding: 8px;
     }
 
