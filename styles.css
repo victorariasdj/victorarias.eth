@@ -424,6 +424,19 @@ audio {
     min-width: 270px;
 }
 
+#downloadBtn {
+    max-width: 120px;
+    max-height: 48px;
+    border-radius: 5px;
+    border: #000 solid 1px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#downloadBtn:hover {
+    box-shadow: 4px 4px 8px #d9d9d9, -4px -4px 8px #ffffff; 
+}
+
 
 @media (max-width: 1260px) {
 
