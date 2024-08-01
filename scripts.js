@@ -10,34 +10,45 @@ document.querySelectorAll('.downloadBtn').forEach(button => {
         const fileUrl = this.getAttribute('data-url');
         const fileName = this.getAttribute('data-filename');
 
-        const notification = document.getElementById('notification');
-        const spinner = document.getElementById('spinner');
+        const parentDiv = this.parentElement;
+        const notification = parentDiv.querySelector('.notification');
+        const progressBar = parentDiv.querySelector('.progress-bar');
+
         notification.style.display = 'block';
-        spinner.style.display = 'block';
 
-        fetch(fileUrl)
-            .then(response => response.blob())
-            .then(blob => {
-                const url = URL.createObjectURL(blob);
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', fileUrl, true);
+        xhr.responseType = 'blob';
 
+        xhr.onprogress = function (event) {
+            if (event.lengthComputable) {
+                const percentComplete = (event.loaded / event.total) * 100;
+                progressBar.style.width = percentComplete + '%';
+                progressBar.textContent = Math.round(percentComplete) + '%';
+            }
+        };
+
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                const url = window.URL.createObjectURL(xhr.response);
                 const a = document.createElement('a');
                 a.href = url;
                 a.download = fileName;
                 document.body.appendChild(a);
                 a.click();
+                window.URL.revokeObjectURL(url);
+                document.body.removeChild(a);
+            }
+            notification.style.display = 'none';
+            progressBar.style.width = '0%';
+            progressBar.textContent = '0%';
+        };
 
-                notification.style.display = 'none';
-                spinner.style.display = 'none';
+        xhr.onerror = function () {
+            console.error('Error al descargar el archivo.');
+            notification.style.display = 'none';
+        };
 
-                setTimeout(() => {
-                    document.body.removeChild(a);
-                    URL.revokeObjectURL(url);
-                }, 0);
-            })
-            .catch(error => {
-                console.error('Error al descargar el archivo:', error);
-                notification.style.display = 'none';
-                spinner.style.display = 'none';
-            });
+        xhr.send();
     });
 });
