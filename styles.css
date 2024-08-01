@@ -336,7 +336,8 @@ p {
 }
 
 .caratula img {
-    height: 300px;
+    width: 100%;
+    height: auto;
     margin: 0 8px 0 4px;
 }
 
