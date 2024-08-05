@@ -59,14 +59,9 @@
                         <div class="texto1">
                             <h2>Techno (132 - 133 bpm)</h2><p>1h:06m:58s</p>11/19/22
                         </div>
-                        <div class="cancion">
-                            <div class="textandbuttons">
-                                <audio controls id="0xgigamix04">
-                                    <source src="https://discoveryprovider.audius.co/v1/tracks/XOx1pPq/stream?app_name=EXAMPLEAPP">
-                                    Tu navegador no soporta el elemento de audio.
-                                </audio>
-                            </div>
+                        <div class="cancion">                            
                             <div class="btnCompra">
+                                <a class="playBtn" data-url="https://discoveryprovider.audius.co/v1/tracks/XOx1pPq/stream?app_name=EXAMPLEAPP">Play<img src="./img/play-solid.svg" alt="Play"> </a>
                                 <a class="downloadBtn" data-url="https://discoveryprovider.audius.co/v1/tracks/XOx1pPq/stream?app_name=EXAMPLEAPP" data-filename="Victor Arias - 0xGIGAMix 04 Techno (132 - 133 bpm).mp3">Download<img src="./img/download-solid.svg" alt="Download"></a>
                                 <div class="notification">Please wait.... por favor espera...</div>
                                 <div class="progress-container">
@@ -86,6 +81,12 @@
                             </a>
                         </div>
                     </div>                    
+                </div>
+
+                <div id="audioPlayerContainer">
+                    <audio id="audioPlayer" controls controlslist="nodownload">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
                 </div>
             </div>
             

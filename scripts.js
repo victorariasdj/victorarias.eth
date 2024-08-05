@@ -5,6 +5,17 @@ menuIcon.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
 
+const audioPlayer = document.getElementById('audioPlayer');
+
+            // Manejar los botones de reproducción
+            document.querySelectorAll('.playBtn').forEach(button => {
+                button.addEventListener('click', function () {
+                    const fileUrl = this.getAttribute('data-url');
+                    audioPlayer.src = fileUrl;
+                    audioPlayer.play();
+                });
+            });
+
 document.querySelectorAll('.downloadBtn').forEach(button => {
     button.addEventListener('click', function () {
         const fileUrl = this.getAttribute('data-url');

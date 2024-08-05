@@ -348,7 +348,11 @@ p {
 }
 
 .textandbuttons {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    align-items: center;
+    justify-content: center;
     /* flex: 2; */
 }
 
@@ -462,12 +466,41 @@ audio {
     border-radius: 5px;
 }
 
+#audioPlayerContainer {
+    position: fixed;
+    bottom: 72px;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 490;
+}
+
+#audioPlayer {
+    width: 100%;
+}
+
+.playBtn {
+    max-height: 48px;
+    border-radius: 5px;
+    border: #000 solid 1px;
+    font-weight: bold;
+    font-size: 12px;
+    gap: 8px;
+}
+
+.playBtn:hover {
+    box-shadow: 4px 4px 8px #d9d9d9, -4px -4px 8px #ffffff; 
+    cursor: pointer;
+}
+
 
 @media (max-width: 1260px) {
 
     main {
         margin-top: 70px;
-        margin-bottom: 120px;
+        margin-bottom: 160px;
     }
     
     .nav-links.active {
@@ -537,5 +570,9 @@ audio {
 
     #btn-donar {
         font-size: 14px;
+    }
+
+    #audioPlayerContainer {
+        bottom: 82px;
     }
 }

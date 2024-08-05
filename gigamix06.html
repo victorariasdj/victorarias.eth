@@ -60,13 +60,8 @@
                             <h2>Tech House (124-126 bpm)</h2><p>1h:09m:40s</p>6/28/23
                         </div>
                         <div class="cancion">
-                            <div class="textandbuttons">
-                                <audio controls id="0xgigamix06">
-                                    <source src="https://discoveryprovider.audius.co/v1/tracks/V4aj0wa/stream?app_name=EXAMPLEAPP">
-                                    Tu navegador no soporta el elemento de audio.
-                                </audio>
-                            </div>
                             <div class="btnCompra">
+                                <a class="playBtn" data-url="https://discoveryprovider.audius.co/v1/tracks/V4aj0wa/stream?app_name=EXAMPLEAPP">Play<img src="./img/play-solid.svg" alt="Play"> </a>
                                 <a class="downloadBtn" data-url="https://discoveryprovider.audius.co/v1/tracks/V4aj0wa/stream?app_name=EXAMPLEAPP" data-filename="Victor Arias - 0xGIGAMix 06 Tech House (124-126 bpm).mp3">Download<img src="./img/download-solid.svg" alt="Download"></a>
                                 <div class="notification">Please wait.... por favor espera...</div>
                                 <div class="progress-container">
@@ -86,7 +81,12 @@
                             </a>
                         </div>
                     </div>
-                    <!-- <input type="range" max="1" min="0" step="0.1" class="volumen"> -->
+                </div>
+
+                <div id="audioPlayerContainer">
+                    <audio id="audioPlayer" controls controlslist="nodownload">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
                 </div>
 
             </div>
