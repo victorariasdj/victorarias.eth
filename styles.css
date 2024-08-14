@@ -150,6 +150,11 @@ section {
     justify-content: center;
     align-items: center;
     color: #000;
+    
+}
+
+.caja-items a:hover{
+    transform: scale(0.98);
 }
 
 /* .release {
@@ -260,7 +265,7 @@ p {
 #btn-donar, img, .nav-links a, .cancion, .controls button, .controls form {
     background-color: #f0f0f0;
     box-shadow: 4px 4px 8px #d9d9d9, -4px -4px 8px #ffffff;
-    transition: box-shadow 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 #btn-donar:hover, img:hover, .nav-links a:hover, .controls button:hover, .controls form:hover {
