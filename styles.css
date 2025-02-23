@@ -95,7 +95,7 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 14px;
 }
 
 .cajas-section a {
