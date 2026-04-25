@@ -66,6 +66,44 @@
             </nav>
         </header>
 
+        <script
+            src="https://www.google.com/recaptcha/api.js"
+            async
+            defer
+        ></script>
+
+        <div
+            style="
+                border-left: 3px solid #007bff;
+                padding-left: 15px;
+                margin: 20px 0;
+            "
+        >
+            <h2
+                style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 87px;
+                    text-align: center;
+                    gap: 4px;
+                "
+            >
+                <strong> Resuelve el captcha solo si deseas descargar </strong>
+                El streaming funciona con normalidad.
+            </h2>
+            <br />
+        </div>
+        <div
+            style="display: flex; justify-content: center; margin-bottom: -20px"
+        >
+            <div
+                class="g-recaptcha"
+                data-sitekey="6LfsWMosAAAAAFJ4iGvpLUPpZMsuS0qPvQLqFkuU"
+                data-callback="onCaptchaSuccess"
+                data-expired-callback="onCaptchaExpired"
+            ></div>
+        </div>
         <main>
             <h1>Victor Arias - 0xGIGAMix 14</h1>
             <div class="caja-items">

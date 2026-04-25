@@ -10,7 +10,7 @@ h2 {
 }
 
 body {
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -37,7 +37,6 @@ body {
     align-items: center;
     gap: 2px;
     color: #000;
-
 }
 
 .logo img {
@@ -69,11 +68,10 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 81px;    
+    margin-top: 28px;
     text-align: center;
     gap: 12px;
 }
-
 
 section {
     gap: 111px;
@@ -81,7 +79,6 @@ section {
 
 .cajas-section {
     gap: 8px;
-    
 }
 
 .logos {
@@ -90,7 +87,7 @@ section {
     justify-content: space-around;
 }
 
-.cajas-section div div{
+.cajas-section div div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -100,7 +97,6 @@ section {
 
 .cajas-section a {
     color: #000;
-
 }
 
 .cajas-section a:hover {
@@ -150,10 +146,9 @@ section {
     justify-content: center;
     align-items: center;
     color: #000;
-    
 }
 
-.caja-items a:hover{
+.caja-items a:hover {
     transform: scale(0.98);
 }
 
@@ -171,7 +166,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 30px;    
+    gap: 30px;
     margin-bottom: 137px;
 }
 
@@ -183,20 +178,17 @@ section {
     max-width: 400px;
     padding: 8px;
     /* border: 1px solid #000; */
-
 }
 
 .caja-mezcla-master section img {
     width: 56px;
     height: 56px;
-
 }
 
 #Buscador-logo {
     width: 200px;
     height: auto;
 }
-
 
 footer {
     background-color: #000;
@@ -240,36 +232,58 @@ p {
     cursor: pointer;
 }
 
-.caja-items a, div a {
-    
-    background-color: #f0f0f0; 
-    box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #ffffff;
+.caja-items a,
+div a {
+    background-color: #f0f0f0;
+    box-shadow:
+        6px 6px 12px #d9d9d9,
+        -6px -6px 12px #ffffff;
     transition: box-shadow 0.3s ease;
 }
 
-.caja-items a:hover, div a:hover {
-    box-shadow: 4px 4px 8px #d9d9d9, -4px -4px 8px #ffffff;
+.caja-items a:hover,
+div a:hover {
+    box-shadow:
+        4px 4px 8px #d9d9d9,
+        -4px -4px 8px #ffffff;
 }
 
 .caja-mezcla-master section {
-    background-color: #f0f0f0; 
-    box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #ffffff; 
+    background-color: #f0f0f0;
+    box-shadow:
+        6px 6px 12px #d9d9d9,
+        -6px -6px 12px #ffffff;
     transition: box-shadow 0.3s ease;
 }
 
 .caja-mezcla-master section {
-    box-shadow: 4px 4px 8px #d9d9d9, -4px -4px 8px #ffffff; 
+    box-shadow:
+        4px 4px 8px #d9d9d9,
+        -4px -4px 8px #ffffff;
 }
 
 /* Estilos de neomorfismo para iconos y botones */
-#btn-donar, img, .nav-links a, .cancion, .controls button, .controls form {
+#btn-donar,
+img,
+.nav-links a,
+.cancion,
+.controls button,
+.controls form {
     background-color: #f0f0f0;
-    box-shadow: 4px 4px 8px #d9d9d9, -4px -4px 8px #ffffff;
+    box-shadow:
+        4px 4px 8px #d9d9d9,
+        -4px -4px 8px #ffffff;
     transition: all 0.5s ease;
 }
 
-#btn-donar:hover, img:hover, .nav-links a:hover, .controls button:hover, .controls form:hover {
-    box-shadow: 2px 2px 4px #d9d9d9, -2px -2px 4px #ffffff; 
+#btn-donar:hover,
+img:hover,
+.nav-links a:hover,
+.controls button:hover,
+.controls form:hover {
+    box-shadow:
+        2px 2px 4px #d9d9d9,
+        -2px -2px 4px #ffffff;
 }
 
 /* Estilos generales */
@@ -321,7 +335,6 @@ p {
     margin: 4px;
 }
 
-
 .texto {
     display: flex;
     flex-wrap: wrap;
@@ -331,7 +344,7 @@ p {
     gap: 4px;
 }
 
-.texto1{
+.texto1 {
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -384,10 +397,9 @@ audio {
     border: #000 solid 1px;
     font-weight: bold;
     font-size: 12px;
-    
 }
 
-.btnCompra form input{
+.btnCompra form input {
     /* width: 100%; */
     /* border: 1px solid black; */
     border-radius: 5px;
@@ -442,7 +454,9 @@ audio {
 }
 
 .downloadBtn:hover {
-    box-shadow: 4px 4px 8px #d9d9d9, -4px -4px 8px #ffffff; 
+    box-shadow:
+        4px 4px 8px #d9d9d9,
+        -4px -4px 8px #ffffff;
     cursor: pointer;
 }
 
@@ -464,7 +478,7 @@ audio {
 
 .notification {
     display: none;
-    text-align:center;
+    text-align: center;
     background-color: #f9f9f9;
     padding: 10px;
     border: 1px solid #ccc;
@@ -496,18 +510,18 @@ audio {
 }
 
 .playBtn:hover {
-    box-shadow: 4px 4px 8px #d9d9d9, -4px -4px 8px #ffffff; 
+    box-shadow:
+        4px 4px 8px #d9d9d9,
+        -4px -4px 8px #ffffff;
     cursor: pointer;
 }
 
-
 @media (max-width: 1260px) {
-
     main {
         margin-top: 70px;
         margin-bottom: 160px;
     }
-    
+
     .nav-links.active {
         display: flex;
         flex-direction: column;
@@ -519,7 +533,6 @@ audio {
         left: 0;
         gap: 12px;
         padding: 12px 0;
-
     }
 
     .nav-links {

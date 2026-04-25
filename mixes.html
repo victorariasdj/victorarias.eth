@@ -47,6 +47,25 @@
         </nav>
     </header>
 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+        <h2 style="display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 87px;
+        text-align: center;
+        gap: 4px;"><strong>
+            Resuelve el captcha solo si deseas descargar
+        </strong>
+        El streaming funciona con normalidad.</h2><br>
+    <div style="display: flex; justify-content: center; margin-bottom: -20px;">
+        <div class="g-recaptcha"
+             data-sitekey="6LfsWMosAAAAAFJ4iGvpLUPpZMsuS0qPvQLqFkuU"
+             data-callback="onCaptchaSuccess"
+             data-expired-callback="onCaptchaExpired">
+        </div>
+    </div>
+
         <main>
             <h1>Mixes</h1>
             <div class="caja-items">
@@ -642,10 +661,8 @@
             <a href="https://twitter.com/VictorAriasdj" target="_blank"><img src="./img/x-twitter.svg" alt="x-twitter"></a>
             <a href="https://www.youtube.com/channel/UCXpgDxiuQ_wLxST9CU36FDQ" target="_blank"><img src="./img/youtube.svg" alt="YouTube"></a>
             <a href="https://www.instagram.com/victorariasdj/" target="_blank"><img src="./img/instagram.svg" alt="Instagram"></a>
-            <!-- <a href="https://t.me/+X7iPgqjuJuRiNWQx" target="_blank"><img src="./img/telegram.svg" alt="Telegram"></a> -->
         </div>
         <p>djvictor_arias@hotmail.com</p>
-        <!-- <a href="https://buscadorcalima.com/donaciones"><button id="btn-donar">Donar</button></a> -->
     </footer>
     <script src="scripts.js"></script>
 </body>
