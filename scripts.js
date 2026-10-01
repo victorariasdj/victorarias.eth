@@ -1,9 +1,12 @@
 const menuIcon = document.querySelector(".menu-icon");
 const navLinks = document.querySelector(".nav-links");
 
-menuIcon.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
+if (menuIcon && navLinks) {
+  menuIcon.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("active");
+    menuIcon.setAttribute("aria-expanded", String(isOpen));
+  });
+}
 
 const audioPlayer = document.getElementById("audioPlayer");
 
