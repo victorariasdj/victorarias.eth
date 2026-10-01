@@ -702,6 +702,7 @@ body.presskit-page {
 
 @media (max-width: 1260px) {
     .presskit-page .menu-icon { display: block; }
+    .bar { display: block; background: #000; }
 }
 
 @media (max-width: 700px) {
